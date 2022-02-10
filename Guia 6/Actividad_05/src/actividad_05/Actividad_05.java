@@ -14,7 +14,6 @@ public class Actividad_05 {
         if (su.adivinarGenerador(g, u)) {
             System.out.println("Correcto");
         }
-        
         System.out.println("Hizo " + u.getIntentos() + " Intentos");
         System.out.println("*Fin Del Juego*");
     }

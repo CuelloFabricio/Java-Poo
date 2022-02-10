@@ -15,7 +15,7 @@ public class ServiceUsuario {
                 System.out.print("Numero:");
                 Integer un = sc.nextInt();
                 if (un==-999){
-                    System.out.println(g.getN());    
+                    System.out.println(g.getN()); 
                 }
                 
                 if (Objects.equals(un, g.getN())){
@@ -29,6 +29,8 @@ public class ServiceUsuario {
                 System.out.println("Erraste");
                 u.setIntentos((u.getIntentos())+1);
                 Bucle=false; 
+                sc.nextLine();
+                adivinarGenerador(g,u);
             }
            return Bucle; 
     }
